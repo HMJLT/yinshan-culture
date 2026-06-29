@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阴山文明走廊 · 文化底蕴</title>
+    <link rel="stylesheet" href="/static/assets/style-dark.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href="/" class="brand">阴山文明走廊<small>YINSHAN CIVILIZATION CORRIDOR</small></a>
+        <nav class="main-nav">
+            <a href="/">首页</a>
+            <a href="/culture" class="active">文化底蕴</a>
+            <a href="/folk">民俗文化</a>
+            <a href="/map">互动地图</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="搜索..." id="searchInput">
+            <button id="searchBtn">搜索</button>
+        </div>
+    </header>
+    <div class="answer-bar"><div id="aiAnswerBox" class="ai-answer-box"></div></div>
+
+    <div class="page-title wrapper">
+        <h1>阴山文化底蕴</h1>
+        <p class="sub">万年岩画 · 千年长城 · 多民族交融 · 活态传承</p>
+    </div>
+    
+    <div class="make-items wrapper">
+        <div class="item"><img src="/static/assets/images/yanhua1.png" alt="岩画艺术" loading="lazy"><div class="text"><h3>🪨 岩画艺术</h3><p>阴山岩画分布150余处，留存五万余幅，从旧石器时代延至元明。题材涵盖狩猎、放牧、祭祀、星辰、战争等，被誉为"北方游牧民族的无字史诗"。2006年为全国重点文保单位，2012年列入世界文化遗产预备名录。</p></div></div>
+        <div class="item"><img src="/static/assets/images/nadamu.jpg" alt="那达慕" loading="lazy"><div class="text"><h3>🏆 那达慕盛会</h3><p>那达慕是蒙古族传统体育竞技大会，核心项目为摔跤、赛马、射箭，被称为"男儿三艺"。2006年列入国家级非物质文化遗产，是阴山游牧文化活态传承的体现。</p></div></div>
+        <div class="item"><img src="/static/assets/images/minzujiaoron.jpg" alt="民族融合" loading="lazy"><div class="text"><h3>🏛️ 千年交融 · 民族走廊</h3><p>匈奴、鲜卑、突厥、回鹘、契丹、蒙古等数十个民族先后在阴山驻牧、迁徙、融合。赵武灵王胡服骑射、北魏定都盛乐……阴山是中华民族交往交流交融的活态样本。</p></div></div>
+        <div class="item"><img src="/static/assets/images/changcheng.jpg" alt="长城遗址" loading="lazy"><div class="text"><h3>🧱 长城边塞 · 军事史诗</h3><p>战国赵长城、秦汉长城、北魏六镇、金界壕……阴山山脉是历代修筑长城最密集的地段。高阙塞、鸡鹿塞等著名关隘见证了两千年的边塞烽烟。</p></div></div>
+        <div class="item"><img src="/static/assets/images/sichou.png" alt="草原丝路" loading="lazy"><div class="text"><h3>🐫 草原丝路 · 商贸枢纽</h3><p>唐代参天可汗道、元代木怜道穿过阴山，茶叶、丝绸北上，马匹、毛皮南下。沿途古城、驿站印证了阴山在东西方交流中的枢纽地位。</p></div></div>
+        <div class="item"><img src="/static/assets/images/yizhi.png" alt="古城遗址" loading="lazy"><div class="text"><h3>🏰 古城遗址 · 历史烙印</h3><p>托托城、沃野镇、元代砂井总管府……阴山南北散布着从战国至明清的古城遗址，是研究北方民族筑城史、屯垦史的活化石。</p></div></div>
+    </div>
+
+    <div class="quiz-wrapper wrapper">
+        <div class="quiz-card">
+            <h3>📜 阴山文化 · 知识闯关</h3>
+            <div id="quiz"><div id="question"></div><div id="options"></div><div id="feedback"></div>
+            <div class="quiz-controls"><button id="nextBtn" style="display:none;">下一题 ➡️</button><button id="restartBtn" style="display:none;">🔄 重新开始</button></div>
+            <div id="score"></div></div>
+        </div>
+    </div>
+
+    <footer class="site-footer">阴山文明走廊 · YINSHAN CIVILIZATION CORRIDOR</footer>
+    <script>
+        const originalQuiz = [
+            { question: "阴山岩画于哪一年被列入全国重点文物保护单位？", options: ["1996年", "2006年", "2012年", "2018年"], correct: 1, explanation: "2006年，阴山岩画被国务院列为第六批全国重点文物保护单位；2012年列入世界文化遗产预备名录。" },
+            { question: "敕勒川，阴山下这首民歌描述的是哪个时期的场景？", options: ["汉代", "北魏", "唐代", "元代"], correct: 1, explanation: "《敕勒歌》是北朝民歌，产生于北魏时期，描绘了阴山脚下草原的壮丽风光。" },
+            { question: "阴山山脉是中国哪两种文明的重要分界线？", options: ["农耕文明与海洋文明", "游牧文明与农耕文明", "森林文明与游牧文明", "绿洲文明与高原文明"], correct: 1, explanation: "阴山以北是游牧区，以南是河套农耕区，是游牧文明与农耕文明的分界线与交融带。" },
+            { question: "下列哪个遗址不属于阴山地区的长城关隘？", options: ["高阙塞", "鸡鹿塞", "玉门关", "赵长城"], correct: 2, explanation: "玉门关位于甘肃敦煌，不属于阴山地区；高阙塞、鸡鹿塞和赵长城都在阴山沿线。" },
+            { question: "马头琴被列入国家级非物质文化遗产的时间是？", options: ["2006年", "2008年", "2010年", "2014年"], correct: 0, explanation: "2006年，蒙古族马头琴音乐被列入第一批国家级非物质文化遗产名录。" },
+            { question: "阴山岩画的主要题材不包括以下哪一项？", options: ["狩猎放牧", "日月星辰", "佛教壁画", "部落战争"], correct: 2, explanation: "阴山岩画多为史前至元代的游牧民族作品，主要内容为动物、狩猎、祭祀、战争等。" }
+        ];
+        function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+        let cur=[],ci=0,sco=0,ans=false;
+        const qe=document.getElementById('question'),oe=document.getElementById('options'),fe=document.getElementById('feedback'),nb=document.getElementById('nextBtn'),rb=document.getElementById('restartBtn'),se=document.getElementById('score');
+        function sr(){cur=shuffle([...originalQuiz]);ci=0;sco=0;ans=false;lq();nb.style.display='none';rb.style.display='none'}
+        function lq(){if(!cur.length)return;ans=false;const q=cur[ci];qe.textContent=(ci+1)+'. '+q.question;oe.innerHTML='';q.options.forEach((o,i)=>{const b=document.createElement('button');b.className='opt-btn';b.textContent=String.fromCharCode(65+i)+'. '+o;b.addEventListener('click',()=>ca(i));oe.appendChild(b)});fe.innerHTML='';nb.style.display='none';rb.style.display='none';se.textContent='\ud83c\udfc6 得分：'+sco+' / '+cur.length}
+        function ca(i){if(ans)return;ans=true;const q=cur[ci];if(i===q.correct){sco++;fe.innerHTML='<div class="correct-feedback">\u2705 回答正确！ '+q.explanation+'</div>'}else{fe.innerHTML='<div class="wrong-feedback">\u274c 回答错误。正确答案是 '+String.fromCharCode(65+q.correct)+'. '+q.options[q.correct]+'。<br>\ud83d\udcd6 '+q.explanation+'</div>'}document.querySelectorAll('.opt-btn').forEach(b=>b.disabled=true);se.textContent='\ud83c\udfc6 得分：'+sco+' / '+cur.length;if(ci+1<cur.length){nb.style.display='inline-block'}else{nb.style.display='none';rb.style.display='inline-block'}}
+        function nq(){if(!ans)return;ci++;lq()}
+        nb.addEventListener('click',nq);rb.addEventListener('click',sr);sr();
+        document.getElementById('searchBtn').addEventListener('click',()=>{const q=document.getElementById('searchInput').value.trim();if(!q)return;const bx=document.getElementById('aiAnswerBox');bx.innerHTML='\ud83e\udd14 正在寻找答案...';bx.style.display='block';setTimeout(()=>{bx.innerHTML='\ud83d\udcac '+(ls(q));setTimeout(()=>{bx.style.display='none'},10000)},300)});
+        document.getElementById('searchInput').addEventListener('keypress',e=>{if(e.key==='Enter')document.getElementById('searchBtn').click()});
+        function ls(q){const db={"\u5ca9\u753b":"阴山岩画分布150余处，留存五万余幅，从旧石器时代延至元明。2006年为全国重点文保单位，2012年列入世界文化遗产预备名录。","\u90a3\u8fbe\u6155":"那达慕是蒙古族传统体育竞技大会，核心项目为摔跤、赛马、射箭，称为男儿三艺。2006年列入国家级非物质文化遗产。","\u957f\u57ce":"阴山沿线分布着赵长城、秦汉长城和高阙塞、鸡鹿塞等关隘，见证两千年边塞烽烟。","\u4e1d\u8def":"唐代参天可汗道、元代木怜道穿过阴山，连接漠北、中原与欧亚大陆。","\u9a6c\u5934\u7434":"马头琴以悠长音色表达牧歌、史诗与草原记忆，2006年列入国家级非遗。","\u796d\u6556\u5305":"祭敖包是草原社会重要的祭祀礼俗，人们献哈达、奶食和酒，绕行敖包祈求风调雨顺。","\u5976\u98df":"蒙古族以奶制品为日常饮食核心，白色被视为吉祥色。奶食是待客、祭祀中不可或缺的礼仪象征。"};for(let[k,v]of Object.entries(db)){if(q.includes(k))return v}return "这个问题我还不太清楚，可以试试搜索岩画、那达慕、长城、草原丝路等关键词哦～"}
+    </script>
+</body>
+</html>

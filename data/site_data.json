@@ -1,0 +1,1285 @@
+{
+  "meta": {
+    "title": {
+      "zh": "阴山文明走廊",
+      "en": "Yinshan Civilization Corridor"
+    },
+    "subtitle": {
+      "zh": "连接农耕与游牧文明的数字时空门户",
+      "en": "A digital gateway between agrarian and nomadic civilizations"
+    },
+    "brand": {
+      "zh": "阴山文明走廊",
+      "en": "Yinshan Corridor"
+    },
+    "heroImage": "/static/assets/images/banner6.png"
+  },
+  "metrics": [
+    {
+      "value": "150+",
+      "label": {
+        "zh": "岩画分布点",
+        "en": "Rock art locations"
+      },
+      "note": {
+        "zh": "来自原站示范资料",
+        "en": "From source-site demo material"
+      }
+    },
+    {
+      "value": "50000+",
+      "label": {
+        "zh": "岩画图像线索",
+        "en": "Petroglyph image clues"
+      },
+      "note": {
+        "zh": "待接入正式数据库",
+        "en": "Ready for verified database import"
+      }
+    },
+    {
+      "value": "7",
+      "label": {
+        "zh": "文明叙事节点",
+        "en": "Narrative nodes"
+      },
+      "note": {
+        "zh": "时间轴示范结构",
+        "en": "Timeline demo structure"
+      }
+    },
+    {
+      "value": "6",
+      "label": {
+        "zh": "资源库分类",
+        "en": "Archive categories"
+      },
+      "note": {
+        "zh": "岩画、民俗、历史等",
+        "en": "Rock art, customs, history, and more"
+      }
+    }
+  ],
+  "navigation": [
+    {
+      "id": "home",
+      "label": {
+        "zh": "首页",
+        "en": "Home"
+      }
+    },
+    {
+      "id": "culture",
+      "label": {
+        "zh": "文化底蕴",
+        "en": "Culture"
+      },
+      "href": "/culture"
+    },
+    {
+      "id": "folk",
+      "label": {
+        "zh": "民俗文化",
+        "en": "Folk"
+      },
+      "href": "/folk"
+    },
+    {
+      "id": "map",
+      "label": {
+        "zh": "互动地图",
+        "en": "Map"
+      },
+      "href": "/map"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "neolithic",
+      "era": {
+        "zh": "新石器时代",
+        "en": "Neolithic"
+      },
+      "title": {
+        "zh": "岩画中的早期信仰",
+        "en": "Early beliefs in rock art"
+      },
+      "period": {
+        "zh": "早期文明线索",
+        "en": "Early civilization clues"
+      },
+      "summary": {
+        "zh": "阴山岩画记录狩猎、动物、天象与祭祀，是北方族群精神世界的视觉遗存。",
+        "en": "Petroglyphs record hunting, animals, celestial symbols, and rituals."
+      },
+      "image": "/static/assets/images/yanhua1.png",
+      "tags": [
+        "岩画",
+        "信仰",
+        "狩猎"
+      ]
+    },
+    {
+      "id": "zhao",
+      "era": {
+        "zh": "战国赵",
+        "en": "Zhao State"
+      },
+      "title": {
+        "zh": "胡服骑射与赵长城",
+        "en": "Riding reform and Zhao Great Wall"
+      },
+      "period": {
+        "zh": "农牧边界重塑",
+        "en": "Frontier transformation"
+      },
+      "summary": {
+        "zh": "赵武灵王沿阴山修筑长城，胡服骑射开启农耕政权与草原世界的制度互动。",
+        "en": "The Zhao frontier connected wall-building with cavalry reform."
+      },
+      "image": "/static/assets/images/changcheng.jpg",
+      "tags": [
+        "赵长城",
+        "胡服骑射",
+        "边塞"
+      ]
+    },
+    {
+      "id": "han-xiongnu",
+      "era": {
+        "zh": "秦汉匈奴",
+        "en": "Qin-Han and Xiongnu"
+      },
+      "title": {
+        "zh": "边塞关隘与草原通道",
+        "en": "Frontier passes and steppe routes"
+      },
+      "period": {
+        "zh": "交通与军事交汇",
+        "en": "Routes and military exchange"
+      },
+      "summary": {
+        "zh": "高阙塞、鸡鹿塞等关隘见证阴山作为军事防线与交流走廊的双重角色。",
+        "en": "Gaoque and Jilu passes made Yinshan both a defense line and a corridor."
+      },
+      "image": "/static/assets/images/site1.jpg",
+      "tags": [
+        "高阙塞",
+        "鸡鹿塞",
+        "汉代"
+      ]
+    },
+    {
+      "id": "xianbei",
+      "era": {
+        "zh": "鲜卑北魏",
+        "en": "Xianbei and Northern Wei"
+      },
+      "title": {
+        "zh": "盛乐记忆与民族融合",
+        "en": "Shengle memory and ethnic fusion"
+      },
+      "period": {
+        "zh": "多民族交融",
+        "en": "Multi-ethnic integration"
+      },
+      "summary": {
+        "zh": "鲜卑、突厥、契丹、蒙古等族群在阴山南北迁徙、驻牧、融合，形成文明交汇带。",
+        "en": "Groups migrated, settled, and fused across the Yinshan region."
+      },
+      "image": "/static/assets/images/minzujiaoron.jpg",
+      "tags": [
+        "鲜卑",
+        "北魏",
+        "民族融合"
+      ]
+    },
+    {
+      "id": "tang-yuan",
+      "era": {
+        "zh": "唐元交通",
+        "en": "Tang-Yuan Routes"
+      },
+      "title": {
+        "zh": "草原丝路的贸易网络",
+        "en": "Trade networks of the steppe Silk Road"
+      },
+      "period": {
+        "zh": "商贸枢纽",
+        "en": "Commercial hub"
+      },
+      "summary": {
+        "zh": "参天可汗道、木怜道穿过阴山，连接漠北、中原与更远的欧亚大陆。",
+        "en": "Routes through Yinshan connected the steppe, China, and Eurasia."
+      },
+      "image": "/static/assets/images/sichou.png",
+      "tags": [
+        "草原丝路",
+        "参天可汗道",
+        "木怜道"
+      ]
+    },
+    {
+      "id": "living",
+      "era": {
+        "zh": "活态民俗",
+        "en": "Living Customs"
+      },
+      "title": {
+        "zh": "那达慕与祭敖包",
+        "en": "Naadam and Ovoo worship"
+      },
+      "period": {
+        "zh": "非遗传承",
+        "en": "Intangible heritage"
+      },
+      "summary": {
+        "zh": "那达慕、祭敖包、婚礼、奶食、敬酒等礼俗延续着草原社会的集体记忆。",
+        "en": "Festivals and rituals preserve the collective memory of the steppe."
+      },
+      "image": "/static/assets/images/nadamu.jpg",
+      "tags": [
+        "那达慕",
+        "祭敖包",
+        "民俗"
+      ]
+    },
+    {
+      "id": "digital",
+      "era": {
+        "zh": "数字时代",
+        "en": "Digital Era"
+      },
+      "title": {
+        "zh": "AI 文化遗产平台",
+        "en": "AI heritage platform"
+      },
+      "period": {
+        "zh": "数字人文",
+        "en": "Digital humanities"
+      },
+      "summary": {
+        "zh": "通过数据中台、互动地图、数字人问答与资源库，把展示网站升级为数字文化产品。",
+        "en": "Data, maps, AI guide, and archives turn a website into a platform."
+      },
+      "image": "/static/assets/images/banner5.png",
+      "tags": [
+        "AI",
+        "数字人文",
+        "平台"
+      ]
+    }
+  ],
+  "map_sites": [
+    {
+      "id": "wulate",
+      "name": {
+        "zh": "乌拉特中旗岩画群",
+        "en": "Urat Middle Banner Rock Art"
+      },
+      "location": {
+        "zh": "巴彦淖尔市乌拉特中旗",
+        "en": "Urat Middle Banner, Bayannur"
+      },
+      "coordinates": [
+        108.6,
+        41.6
+      ],
+      "position": [
+        23,
+        34
+      ],
+      "summary": {
+        "zh": "阴山岩画最密集区域之一，题材涉及狩猎、放牧、祭祀与天体图案。",
+        "en": "A dense rock art area with hunting, herding, ritual, and celestial motifs."
+      },
+      "image": "/static/assets/images/site2.jpg",
+      "tags": [
+        "岩画",
+        "遗址"
+      ]
+    },
+    {
+      "id": "gaoque",
+      "name": {
+        "zh": "高阙塞遗址",
+        "en": "Gaoque Pass Site"
+      },
+      "location": {
+        "zh": "阴山西段",
+        "en": "Western Yinshan"
+      },
+      "coordinates": [
+        107.1,
+        41.4
+      ],
+      "position": [
+        14,
+        48
+      ],
+      "summary": {
+        "zh": "赵长城与汉代边塞体系中的重要关隘，连接防御与交通功能。",
+        "en": "A key pass in the Zhao and Han frontier defense systems."
+      },
+      "image": "/static/assets/images/site1.jpg",
+      "tags": [
+        "长城",
+        "关隘"
+      ]
+    },
+    {
+      "id": "jilu",
+      "name": {
+        "zh": "鸡鹿塞",
+        "en": "Jilu Pass"
+      },
+      "location": {
+        "zh": "阴山南麓",
+        "en": "Southern Yinshan"
+      },
+      "coordinates": [
+        106.9,
+        40.9
+      ],
+      "position": [
+        18,
+        66
+      ],
+      "summary": {
+        "zh": "汉代通往塞北的重要关塞，见证中原与草原之间的往来。",
+        "en": "A Han-period gate toward the northern steppe."
+      },
+      "image": "/static/assets/images/site3.jpg",
+      "tags": [
+        "汉代",
+        "交通"
+      ]
+    },
+    {
+      "id": "zhao-wall",
+      "name": {
+        "zh": "赵长城遗迹",
+        "en": "Zhao Great Wall Remains"
+      },
+      "location": {
+        "zh": "呼和浩特至包头一线",
+        "en": "Hohhot-Baotou corridor"
+      },
+      "coordinates": [
+        110.2,
+        40.8
+      ],
+      "position": [
+        68,
+        61
+      ],
+      "summary": {
+        "zh": "战国赵武灵王沿阴山修筑的早期长城遗存，体现农牧边界治理。",
+        "en": "Early wall remains reflecting frontier governance."
+      },
+      "image": "/static/assets/images/changcheng.jpg",
+      "tags": [
+        "赵长城",
+        "战国"
+      ]
+    },
+    {
+      "id": "silk-road",
+      "name": {
+        "zh": "草原丝路古道",
+        "en": "Steppe Silk Road"
+      },
+      "location": {
+        "zh": "阴山交通廊道",
+        "en": "Yinshan transport corridor"
+      },
+      "coordinates": [
+        108.9,
+        41.0
+      ],
+      "position": [
+        48,
+        56
+      ],
+      "summary": {
+        "zh": "茶叶、丝绸北上，马匹、毛皮南下，形成横跨阴山的商贸网络。",
+        "en": "Tea and silk moved north, while horses and furs moved south."
+      },
+      "image": "/static/assets/images/sichou.png",
+      "tags": [
+        "丝路",
+        "商贸"
+      ]
+    },
+    {
+      "id": "woye",
+      "name": {
+        "zh": "沃野镇遗址",
+        "en": "Woye Town Site"
+      },
+      "location": {
+        "zh": "阴山南北交通节点",
+        "en": "Yinshan transit node"
+      },
+      "coordinates": [
+        109.5,
+        40.9
+      ],
+      "position": [
+        59,
+        70
+      ],
+      "summary": {
+        "zh": "北魏六镇之一，见证边防重镇与民族融合的历史。",
+        "en": "One of the Northern Wei frontier towns."
+      },
+      "image": "/static/assets/images/yizhi.png",
+      "tags": [
+        "北魏",
+        "古城"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "rock",
+      "label": {
+        "zh": "岩画",
+        "en": "Rock Art"
+      }
+    },
+    {
+      "id": "relic",
+      "label": {
+        "zh": "文物",
+        "en": "Artifacts"
+      }
+    },
+    {
+      "id": "folk",
+      "label": {
+        "zh": "民俗",
+        "en": "Customs"
+      }
+    },
+    {
+      "id": "costume",
+      "label": {
+        "zh": "服饰",
+        "en": "Costume"
+      }
+    },
+    {
+      "id": "music",
+      "label": {
+        "zh": "音乐",
+        "en": "Music"
+      }
+    },
+    {
+      "id": "history",
+      "label": {
+        "zh": "历史人物",
+        "en": "History"
+      }
+    }
+  ],
+  "resources": [
+    {
+      "id": "rock-art",
+      "category": "rock",
+      "title": {
+        "zh": "阴山岩画艺术",
+        "en": "Yinshan Rock Art"
+      },
+      "period": {
+        "zh": "旧石器至元明",
+        "en": "Paleolithic to Yuan-Ming"
+      },
+      "summary": {
+        "zh": "题材涵盖狩猎、放牧、祭祀、星辰与战争，被称为北方游牧民族的无字史诗。",
+        "en": "A visual epic of northern nomads, spanning hunting, herding, rituals, stars, and war."
+      },
+      "image": "/static/assets/images/yanhua1.png",
+      "tags": [
+        "岩画",
+        "世界遗产预备名录"
+      ]
+    },
+    {
+      "id": "site-remains",
+      "category": "relic",
+      "title": {
+        "zh": "古城与遗址",
+        "en": "Ancient Cities and Sites"
+      },
+      "period": {
+        "zh": "战国至明清",
+        "en": "Warring States to Ming-Qing"
+      },
+      "summary": {
+        "zh": "托托城、沃野镇、砂井总管府等遗址呈现北方筑城、屯垦与治理线索。",
+        "en": "Sites reveal city-building, farming colonies, and frontier governance."
+      },
+      "image": "/static/assets/images/yizhi.png",
+      "tags": [
+        "遗址",
+        "古城"
+      ]
+    },
+    {
+      "id": "naadam",
+      "category": "folk",
+      "title": {
+        "zh": "那达慕盛会",
+        "en": "Naadam Festival"
+      },
+      "period": {
+        "zh": "活态非遗",
+        "en": "Living heritage"
+      },
+      "summary": {
+        "zh": "摔跤、赛马、射箭构成“男儿三艺”，是阴山游牧文化的重要传承。",
+        "en": "Wrestling, horse racing, and archery form the traditional three skills."
+      },
+      "image": "/static/assets/images/nadamu.jpg",
+      "tags": [
+        "那达慕",
+        "非遗"
+      ]
+    },
+    {
+      "id": "ovoo",
+      "category": "folk",
+      "title": {
+        "zh": "祭敖包",
+        "en": "Ovoo Worship"
+      },
+      "period": {
+        "zh": "草原信仰",
+        "en": "Steppe belief"
+      },
+      "summary": {
+        "zh": "以哈达、奶食、酒祭祀天地山川，祈求风调雨顺、人畜平安。",
+        "en": "Offerings pray for good weather, peace, and abundance."
+      },
+      "image": "/static/assets/images/aobao1.jpg",
+      "tags": [
+        "祭敖包",
+        "信仰"
+      ]
+    },
+    {
+      "id": "costume",
+      "category": "costume",
+      "title": {
+        "zh": "蒙古袍与礼仪服饰",
+        "en": "Mongolian Robe and Ritual Costume"
+      },
+      "period": {
+        "zh": "服饰文化",
+        "en": "Costume culture"
+      },
+      "summary": {
+        "zh": "蒙古袍、珊瑚头饰与骑乘生活紧密相关，体现草原审美与礼仪秩序。",
+        "en": "Robes and coral ornaments reflect steppe aesthetics and ritual order."
+      },
+      "image": "/static/assets/images/menggupao2.png",
+      "tags": [
+        "服饰",
+        "礼仪"
+      ]
+    },
+    {
+      "id": "morin-khuur",
+      "category": "music",
+      "title": {
+        "zh": "马头琴音乐",
+        "en": "Morin Khuur Music"
+      },
+      "period": {
+        "zh": "草原音乐",
+        "en": "Steppe music"
+      },
+      "summary": {
+        "zh": "马头琴以悠长音色表达牧歌、史诗与草原记忆，是蒙古族音乐的重要象征。",
+        "en": "The horse-head fiddle carries songs, epics, and steppe memory."
+      },
+      "image": "/static/assets/images/matouqin.jpg",
+      "tags": [
+        "音乐",
+        "马头琴"
+      ]
+    },
+    {
+      "id": "great-wall",
+      "category": "history",
+      "title": {
+        "zh": "长城边塞叙事",
+        "en": "Great Wall Frontier Narrative"
+      },
+      "period": {
+        "zh": "战国至汉代",
+        "en": "Warring States to Han"
+      },
+      "summary": {
+        "zh": "赵长城、秦汉长城与高阙塞、鸡鹿塞共同构成阴山边塞文明的骨架。",
+        "en": "Walls and passes form the backbone of Yinshan frontier civilization."
+      },
+      "image": "/static/assets/images/changcheng.jpg",
+      "tags": [
+        "长城",
+        "边塞"
+      ]
+    },
+    {
+      "id": "dairy",
+      "category": "folk",
+      "title": {
+        "zh": "奶食文化",
+        "en": "Dairy Culture"
+      },
+      "period": {
+        "zh": "饮食礼俗",
+        "en": "Food custom"
+      },
+      "summary": {
+        "zh": "鲜奶、酸奶、奶豆腐和奶酪既是日常食物，也是待客与祭祀中的吉祥象征。",
+        "en": "Dairy foods are everyday staples and auspicious ritual offerings."
+      },
+      "image": "/static/assets/images/naipizi2.jpg",
+      "tags": [
+        "奶食",
+        "礼俗"
+      ]
+    }
+  ],
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "id": "yinshan",
+        "name": {
+          "zh": "阴山山脉",
+          "en": "Yinshan Mountains"
+        },
+        "category": { "zh": "地理", "en": "Geography" },
+        "symbolSize": 60
+      },
+      {
+        "id": "xiongnu",
+        "name": {
+          "zh": "匈奴",
+          "en": "Xiongnu"
+        },
+        "category": { "zh": "民族", "en": "Ethnic Groups" },
+        "symbolSize": 50
+      },
+      {
+        "id": "xianbei",
+        "name": {
+          "zh": "鲜卑",
+          "en": "Xianbei"
+        },
+        "category": "民族",
+        "symbolSize": 46
+      },
+      {
+        "id": "tujue",
+        "name": {
+          "zh": "突厥",
+          "en": "Turkic"
+        },
+        "category": "民族",
+        "symbolSize": 44
+      },
+      {
+        "id": "mongol",
+        "name": {
+          "zh": "蒙古族",
+          "en": "Mongols"
+        },
+        "category": "民族",
+        "symbolSize": 54
+      },
+      {
+        "id": "han",
+        "name": {
+          "zh": "中原王朝",
+          "en": "Central Plains Dynasties"
+        },
+        "category": { "zh": "王朝", "en": "Dynasties" },
+        "symbolSize": 52
+      },
+      {
+        "id": "tang",
+        "name": {
+          "zh": "唐朝",
+          "en": "Tang Dynasty"
+        },
+        "category": "王朝",
+        "symbolSize": 48
+      },
+      {
+        "id": "yuan",
+        "name": {
+          "zh": "元朝",
+          "en": "Yuan Dynasty"
+        },
+        "category": "王朝",
+        "symbolSize": 46
+      },
+      {
+        "id": "qing",
+        "name": {
+          "zh": "清朝",
+          "en": "Qing Dynasty"
+        },
+        "category": "王朝",
+        "symbolSize": 46
+      },
+      {
+        "id": "rock_art",
+        "name": {
+          "zh": "阴山岩画",
+          "en": "Yinshan Rock Art"
+        },
+        "category": { "zh": "文物", "en": "Artifacts" },
+        "symbolSize": 56
+      },
+      {
+        "id": "great_wall",
+        "name": {
+          "zh": "赵长城",
+          "en": "Zhao Great Wall"
+        },
+        "category": { "zh": "遗址", "en": "Sites" },
+        "symbolSize": 50
+      },
+      {
+        "id": "gaoque",
+        "name": {
+          "zh": "高阙塞",
+          "en": "Gaoque Pass"
+        },
+        "category": "遗址",
+        "symbolSize": 40
+      },
+      {
+        "id": "jilu",
+        "name": {
+          "zh": "鸡鹿塞",
+          "en": "Jilu Pass"
+        },
+        "category": "遗址",
+        "symbolSize": 38
+      },
+      {
+        "id": "silk_road",
+        "name": {
+          "zh": "草原丝路",
+          "en": "Steppe Silk Road"
+        },
+        "category": { "zh": "交通", "en": "Routes" },
+        "symbolSize": 50
+      },
+      {
+        "id": "naadam",
+        "name": {
+          "zh": "那达慕",
+          "en": "Naadam"
+        },
+        "category": { "zh": "非遗", "en": "Intangible" },
+        "symbolSize": 48
+      },
+      {
+        "id": "ovoo",
+        "name": {
+          "zh": "祭敖包",
+          "en": "Ovoo Worship"
+        },
+        "category": "非遗",
+        "symbolSize": 42
+      },
+      {
+        "id": "morin_khuur",
+        "name": {
+          "zh": "马头琴",
+          "en": "Morin Khuur"
+        },
+        "category": "非遗",
+        "symbolSize": 40
+      },
+      {
+        "id": "dairy",
+        "name": {
+          "zh": "奶食文化",
+          "en": "Dairy Culture"
+        },
+        "category": "非遗",
+        "symbolSize": 36
+      },
+      {
+        "id": "zhao_wuling",
+        "name": {
+          "zh": "赵武灵王",
+          "en": "King Wuling of Zhao"
+        },
+        "category": { "zh": "人物", "en": "Figures" },
+        "symbolSize": 44
+      },
+      {
+        "id": "modu",
+        "name": {
+          "zh": "冒顿单于",
+          "en": "Modu Chanyu"
+        },
+        "category": "人物",
+        "symbolSize": 40
+      },
+      {
+        "id": "wang_zhaojun",
+        "name": {
+          "zh": "王昭君",
+          "en": "Wang Zhaojun"
+        },
+        "category": "人物",
+        "symbolSize": 38
+      },
+      {
+        "id": "kublai",
+        "name": {
+          "zh": "忽必烈",
+          "en": "Kublai Khan"
+        },
+        "category": "人物",
+        "symbolSize": 46
+      },
+      {
+        "id": "costume",
+        "name": {
+          "zh": "蒙古族服饰",
+          "en": "Mongol Costume"
+        },
+        "category": "非遗",
+        "symbolSize": 36
+      },
+      {
+        "id": "woye",
+        "name": {
+          "zh": "沃野镇",
+          "en": "Woye Town"
+        },
+        "category": "遗址",
+        "symbolSize": 36
+      }
+    ],
+    "edges": [
+      {
+        "source": "xiongnu",
+        "target": "yinshan",
+        "relation": {
+          "zh": "游牧于",
+          "en": "nomadic in"
+        }
+      },
+      {
+        "source": "xianbei",
+        "target": "yinshan",
+        "relation": {
+          "zh": "迁徙至",
+          "en": "migrated to"
+        }
+      },
+      {
+        "source": "tujue",
+        "target": "yinshan",
+        "relation": {
+          "zh": "控制",
+          "en": "controlled"
+        }
+      },
+      {
+        "source": "mongol",
+        "target": "yinshan",
+        "relation": {
+          "zh": "发源于",
+          "en": "originated from"
+        }
+      },
+      {
+        "source": "han",
+        "target": "xiongnu",
+        "relation": {
+          "zh": "对抗与和亲",
+          "en": "conflict & alliance"
+        }
+      },
+      {
+        "source": "han",
+        "target": "great_wall",
+        "relation": {
+          "zh": "修建",
+          "en": "built"
+        }
+      },
+      {
+        "source": "tang",
+        "target": "tujue",
+        "relation": {
+          "zh": "征伐",
+          "en": "campaigned against"
+        }
+      },
+      {
+        "source": "tang",
+        "target": "silk_road",
+        "relation": {
+          "zh": "开通",
+          "en": "opened"
+        }
+      },
+      {
+        "source": "yuan",
+        "target": "mongol",
+        "relation": {
+          "zh": "建立",
+          "en": "established by"
+        }
+      },
+      {
+        "source": "qing",
+        "target": "mongol",
+        "relation": {
+          "zh": "联盟",
+          "en": "allied with"
+        }
+      },
+      {
+        "source": "rock_art",
+        "target": "yinshan",
+        "relation": {
+          "zh": "分布于",
+          "en": "distributed in"
+        }
+      },
+      {
+        "source": "great_wall",
+        "target": "yinshan",
+        "relation": {
+          "zh": "沿山而建",
+          "en": "built along"
+        }
+      },
+      {
+        "source": "gaoque",
+        "target": "great_wall",
+        "relation": {
+          "zh": "属于",
+          "en": "part of"
+        }
+      },
+      {
+        "source": "jilu",
+        "target": "great_wall",
+        "relation": {
+          "zh": "属于",
+          "en": "part of"
+        }
+      },
+      {
+        "source": "silk_road",
+        "target": "yinshan",
+        "relation": {
+          "zh": "穿越",
+          "en": "crosses"
+        }
+      },
+      {
+        "source": "naadam",
+        "target": "mongol",
+        "relation": {
+          "zh": "传承于",
+          "en": "tradition of"
+        }
+      },
+      {
+        "source": "ovoo",
+        "target": "mongol",
+        "relation": {
+          "zh": "信仰习俗",
+          "en": "belief of"
+        }
+      },
+      {
+        "source": "morin_khuur",
+        "target": "mongol",
+        "relation": {
+          "zh": "传统乐器",
+          "en": "instrument of"
+        }
+      },
+      {
+        "source": "dairy",
+        "target": "mongol",
+        "relation": {
+          "zh": "饮食传统",
+          "en": "diet of"
+        }
+      },
+      {
+        "source": "costume",
+        "target": "mongol",
+        "relation": {
+          "zh": "属于",
+          "en": "belongs to"
+        }
+      },
+      {
+        "source": "zhao_wuling",
+        "target": "great_wall",
+        "relation": {
+          "zh": "主持修建",
+          "en": "ordered construction of"
+        }
+      },
+      {
+        "source": "modu",
+        "target": "xiongnu",
+        "relation": {
+          "zh": "统一",
+          "en": "unified"
+        }
+      },
+      {
+        "source": "wang_zhaojun",
+        "target": "xiongnu",
+        "relation": {
+          "zh": "和亲",
+          "en": "marriage alliance with"
+        }
+      },
+      {
+        "source": "kublai",
+        "target": "yuan",
+        "relation": {
+          "zh": "建立",
+          "en": "founded"
+        }
+      },
+      {
+        "source": "woye",
+        "target": "yinshan",
+        "relation": {
+          "zh": "位于",
+          "en": "located in"
+        }
+      }
+    ]
+  },
+  "knowledge": {
+    "zh": [
+      {
+        "keywords": [
+          "岩画",
+          "阴山岩画",
+          "岩画价值"
+        ],
+        "answer": "阴山岩画分布点众多，题材包括狩猎、放牧、祭祀、星辰和战争。它像一部刻在山石上的北方民族史，适合用图像识别、GIS 和时间轴继续做深度数字化。"
+      },
+      {
+        "keywords": [
+          "那达慕",
+          "男儿三艺",
+          "摔跤",
+          "赛马",
+          "射箭"
+        ],
+        "answer": "那达慕是蒙古族传统竞技与节庆活动，核心项目是摔跤、赛马、射箭，也被称为“男儿三艺”。它是阴山活态民俗展示中最适合做互动体验的主题之一。"
+      },
+      {
+        "keywords": [
+          "祭敖包",
+          "敖包"
+        ],
+        "answer": "祭敖包是草原社会重要的祭祀礼俗，人们献哈达、奶食和酒，围绕敖包祈求风调雨顺、人畜平安。"
+      },
+      {
+        "keywords": [
+          "赵长城",
+          "长城",
+          "高阙塞",
+          "鸡鹿塞"
+        ],
+        "answer": "阴山沿线分布着赵长城、秦汉长城和高阙塞、鸡鹿塞等关隘。它们说明阴山既是边防线，也是农耕与游牧文明持续交流的走廊。"
+      },
+      {
+        "keywords": [
+          "草原丝路",
+          "丝绸之路",
+          "参天可汗道",
+          "木怜道"
+        ],
+        "answer": "草原丝路穿越阴山，连接漠北、中原与欧亚大陆。茶叶、丝绸、马匹、毛皮等商品在这里流动，也带来了制度、语言和艺术的交流。"
+      },
+      {
+        "keywords": [
+          "数字人",
+          "AI",
+          "导览",
+          "小使者"
+        ],
+        "answer": "阴山小使者是一位AI数字人导览助手，为您讲述阴山岩画、长城关隘、那达慕盛会和草原丝路的精彩故事。"
+      }
+    ],
+    "en": [
+      {
+        "keywords": [
+          "rock art",
+          "petroglyph",
+          "yinshan rock art"
+        ],
+        "answer": "Yinshan rock art records hunting, herding, rituals, stars, and war. It can be expanded with image recognition, GIS, and timeline-based interpretation."
+      },
+      {
+        "keywords": [
+          "naadam",
+          "wrestling",
+          "horse racing",
+          "archery"
+        ],
+        "answer": "Naadam is a Mongolian festival centered on wrestling, horse racing, and archery. It is ideal for interactive heritage experiences."
+      },
+      {
+        "keywords": [
+          "ovoo",
+          "worship"
+        ],
+        "answer": "Ovoo worship uses offerings such as hada, dairy food, and wine to pray for good weather, safety, and abundance."
+      },
+      {
+        "keywords": [
+          "great wall",
+          "zhao great wall",
+          "gaoque",
+          "jilu"
+        ],
+        "answer": "The Great Wall sites and frontier passes show Yinshan as both a defensive line and a cultural corridor."
+      },
+      {
+        "keywords": [
+          "silk road",
+          "steppe silk road"
+        ],
+        "answer": "The steppe Silk Road crossed Yinshan and carried goods, ideas, language, and art across Eurasia."
+      },
+      {
+        "keywords": [
+          "ai",
+          "guide",
+          "avatar"
+        ],
+        "answer": "The Yinshan digital guide is an AI assistant that shares fascinating stories about Yinshan rock art, frontier passes, Naadam festivals, and the steppe Silk Road."
+      }
+    ]
+  },
+  "civilization_cards": [
+    {
+      "id": "origin",
+      "title": {
+        "zh": "文明起源",
+        "en": "Origins"
+      },
+      "summary": {
+        "zh": "阴山岩画可追溯至旧石器时代晚期，记录狩猎、放牧、祭祀与星辰，是北方游牧民族无字的史诗。",
+        "en": "Rock art dating back to the late Paleolithic records hunting, herding, rituals, and stars."
+      },
+      "image": "/static/assets/images/yanhua1.png"
+    },
+    {
+      "id": "evolution",
+      "title": {
+        "zh": "历史演进",
+        "en": "Evolution"
+      },
+      "summary": {
+        "zh": "从赵长城到秦汉边塞，从鲜卑南迁到蒙元一统，阴山始终是农牧文明碰撞与交融的前沿。",
+        "en": "From Zhao walls to Yuan unification, Yinshan witnessed frontier conflicts and fusion."
+      },
+      "image": "/static/assets/images/changcheng.jpg"
+    },
+    {
+      "id": "ethnic",
+      "title": {
+        "zh": "民族融合",
+        "en": "Ethnic Exchange"
+      },
+      "summary": {
+        "zh": "匈奴、鲜卑、突厥、契丹、蒙古等多民族在阴山南北迁徙驻牧，形成了多元一体的文明格局。",
+        "en": "Multiple ethnic groups migrated and settled across Yinshan, forming a diverse civilization."
+      },
+      "image": "/static/assets/images/minzujiaoron.jpg"
+    },
+    {
+      "id": "trade",
+      "title": {
+        "zh": "草原丝路",
+        "en": "Steppe Silk Road"
+      },
+      "summary": {
+        "zh": "唐代参天可汗道、元代木怜道穿山而过，茶叶丝绸北上，马匹毛皮南下，连接欧亚大陆。",
+        "en": "Trade routes through Yinshan connected the steppe, China, and Eurasia."
+      },
+      "image": "/static/assets/images/sichou.png"
+    }
+  ],
+  "heritage_cards": [
+    {
+      "id": "rock-art",
+      "title": {
+        "zh": "岩画艺术",
+        "en": "Rock Art"
+      },
+      "summary": {
+        "zh": "150余处岩画分布点、五万余幅图像，题材涵盖狩猎、放牧、祭祀、星辰与战争。",
+        "en": "Over 150 sites and 50,000 images spanning hunting, herding, rituals, and war."
+      },
+      "image": "/static/assets/images/yanhua1.png"
+    },
+    {
+      "id": "relics",
+      "title": {
+        "zh": "文物遗存",
+        "en": "Artifacts"
+      },
+      "summary": {
+        "zh": "托托城、沃野镇、砂井总管府等遗址呈现北方筑城、屯垦与边疆治理的历史线索。",
+        "en": "Ancient city sites reveal frontier governance and settlement history."
+      },
+      "image": "/static/assets/images/yizhi.png"
+    },
+    {
+      "id": "sites",
+      "title": {
+        "zh": "历史遗迹",
+        "en": "Historic Sites"
+      },
+      "summary": {
+        "zh": "赵长城、秦汉长城、高阙塞、鸡鹿塞构成阴山边塞文明的防御与交流骨架。",
+        "en": "Great Wall sections and frontier passes form the backbone of Yinshan border civilization."
+      },
+      "image": "/static/assets/images/changcheng.jpg"
+    },
+    {
+      "id": "intangible",
+      "title": {
+        "zh": "非遗文化",
+        "en": "Intangible Heritage"
+      },
+      "summary": {
+        "zh": "那达慕、祭敖包、蒙古族婚礼、奶食礼俗等活态传承延续草原社会的集体记忆。",
+        "en": "Naadam, Ovoo worship, and living customs preserve the collective memory of the steppe."
+      },
+      "image": "/static/assets/images/nadamu.jpg"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阴山文明走廊 · 民俗文化</title>
+    <link rel="stylesheet" href="/static/assets/style-dark.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href="/" class="brand">阴山文明走廊<small>YINSHAN CIVILIZATION CORRIDOR</small></a>
+        <nav class="main-nav">
+            <a href="/">首页</a>
+            <a href="/culture">文化底蕴</a>
+            <a href="/folk" class="active">民俗文化</a>
+            <a href="/map">互动地图</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="搜索..." id="searchInput">
+            <button id="searchBtn">搜索</button>
+        </div>
+    </header>
+    <div class="answer-bar"><div id="aiAnswerBox" class="ai-answer-box"></div></div>
+
+    <div class="page-title wrapper">
+        <h1>阴山民俗文化</h1>
+        <p class="sub">信仰与礼俗 · 草原生活的集体记忆</p>
+    </div>
+    
+    <div class="pais wrapper">
+        <div class="pai"><div class="pic"><img src="/static/assets/images/aobao1.jpg" alt="祭敖包" loading="lazy"></div><div class="pai-name">🏠 祭敖包</div><div class="pai-text">敖包是蒙古族传统祭祀圣地，由石块堆砌成圆锥形。每年春夏之交举行，人们献哈达、奶食、酒，绕行三圈祈求风调雨顺、人畜平安。祭祀后伴有歌舞，是阴山地区最重要的集体信仰仪式。</div></div>
+        <div class="pai"><div class="pic"><img src="/static/assets/images/hunli3.jpg" alt="蒙古族婚礼" loading="lazy"></div><div class="pai-name">💍 蒙古族婚礼</div><div class="pai-text">阴山地区传统婚礼仪式繁复热烈，包括提亲、定亲、迎亲、拜火、敬酒、回门等。新娘穿戴珊瑚头饰与长袍，新郎骑马迎亲。全程伴有祝颂词、民歌与奶酒，体现草原民族的生命礼俗。</div></div>
+        <div class="pai"><div class="pic"><img src="/static/assets/images/naipizi2.jpg" alt="奶食" loading="lazy"></div><div class="pai-name">🥛 奶食文化</div><div class="pai-text">蒙古族以奶制品为日常饮食核心，包括鲜奶、酸奶、奶豆腐、奶酪、奶皮子、黄油。白色被视为吉祥色。奶食不仅是食物，更是待客、祭祀、婚礼中不可或缺的礼仪象征。</div></div>
+        <div class="pai"><div class="pic"><img src="/static/assets/images/tuowenhua4.jpg" alt="骆驼" loading="lazy"></div><div class="pai-name">🐫 驼文化</div><div class="pai-text">阴山以北的戈壁草原，骆驼是传统交通工具与生活依赖。驼毛擀毡、驼奶酿酒等技艺代代相传。冬季举行骆驼赛跑、驼球比赛，是独具特色的生产生活习俗遗产。</div></div>
+        <div class="pai"><div class="pic"><img src="/static/assets/images/jihuojie5.jpg" alt="祭火" loading="lazy"></div><div class="pai-name">🔥 祭火节</div><div class="pai-text">农历腊月二十三或二十四，蒙古族举行祭火仪式，祭祀火神。清理灶台，点燃新火，供奉羊胸骨、奶食、绸缎等。火被视为纯洁与兴旺的象征，祈求家庭平安、牲畜兴旺。</div></div>
+        <div class="pai"><div class="pic"><img src="/static/assets/images/jingjiu6.jpg" alt="敬酒" loading="lazy"></div><div class="pai-name">🍷 敬酒礼仪</div><div class="pai-text">蒙古族敬酒是待客最高礼遇。主人双手捧起银碗或木碗盛满马奶酒，客人应以右手无名指蘸酒弹向天、地、火神，然后饮用。敬酒时伴有祝酒歌，体现草原民族的热情与尊崇。</div></div>
+    </div>
+
+    <div class="game-wrapper wrapper">
+        <div class="game-card">
+            <h3>🎮 阴山民俗 · 记忆翻牌配对</h3>
+            <p class="game-desc">点击卡片配对民俗项目与对应图标，挑战你的记忆力！</p>
+            <div class="game-stats">
+                <span>⏱️ 用时: <span id="timer">0</span> 秒</span>
+                <span>🎯 尝试: <span id="attempts">0</span></span>
+                <button id="resetGameBtn">🔄 重新洗牌</button>
+            </div>
+            <div id="game-board" class="game-board"></div>
+            <div id="game-message"></div>
+        </div>
+    </div>
+
+    <footer class="site-footer">阴山文明走廊 · YINSHAN CIVILIZATION CORRIDOR</footer>
+    <script>
+        const pairsData=[["祭敖包","🏠"],["蒙古族婚礼","💍"],["奶食文化","🥛"],["驼文化","🐫"],["祭火节","🔥"],["敬酒礼仪","🍷"]];
+        let cards=[],fl=[],lb=!1,att=0,ts=0,ti=null,gc=!1;
+        const bd=document.getElementById('game-board'),as=document.getElementById('attempts'),tr=document.getElementById('timer'),rb=document.getElementById('resetGameBtn'),md=document.getElementById('game-message');
+        function sh(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+        function ic(){let n=[];pairsData.forEach((p,i)=>{n.push({t:p[0],ic:p[1],mt:!1,id:i});n.push({t:p[0],ic:p[1],mt:!1,id:i})});return sh(n).map((c,i)=>({...c,ci:i}))}
+        function st(){if(ti){clearInterval(ti);ti=null}}
+        function sat(){if(ti)st();ti=setInterval(()=>{if(!gc&&!lb){ts++;tr.textContent=ts}},1000)}
+        function rg(){st();cards=ic();fl=[];lb=!1;att=0;ts=0;gc=!1;as.textContent=att;tr.textContent=ts;md.innerHTML='';rb();sat()}
+        function cm(){const[a,b]=fl;if(a.id===b.id){a.mt=!0;b.mt=!0;document.querySelectorAll('.card-game').forEach(e=>{const i=parseInt(e.dataset.index);if(cards[i].mt){e.classList.add('matched');e.classList.remove('flipped');e.innerHTML=cards[i].ic+' '+cards[i].t}});fl=[];if(cards.every(c=>c.mt)){gc=!0;st();md.innerHTML='<div style="background:rgba(111,143,115,0.2);padding:10px;border-radius:12px;">🎉 恭喜！完成全部配对！ 用时 '+ts+' 秒，尝试 '+att+' 次</div>'}}else{lb=!0;setTimeout(()=>{document.querySelectorAll('.card-game').forEach(e=>{const i=parseInt(e.dataset.index);if(!cards[i].mt&&e.classList.contains('flipped')){e.classList.remove('flipped');e.innerHTML='\u2753'}});fl=[];lb=!1},800)}}
+        function hc(i){if(lb||gc)return;const c=cards[i];if(c.mt||fl.includes(c)||fl.length===2)return;const e=document.querySelector('.card-game[data-index=\"'+i+'\"]');e.classList.add('flipped');e.innerHTML=c.ic+' '+c.t;fl.push(c);if(fl.length===2){att++;as.textContent=att;cm()}}
+        function rb2(){bd.innerHTML='';cards.forEach((c,i)=>{const d=document.createElement('div');d.className='card-game';if(c.mt){d.classList.add('matched');d.innerHTML=c.ic+' '+c.t}else{d.innerHTML='\u2753'}d.setAttribute('data-index',i);d.addEventListener('click',()=>hc(i));bd.appendChild(d)})}
+        rg();document.getElementById('resetGameBtn').addEventListener('click',rg);
+        document.getElementById('searchBtn').addEventListener('click',()=>{const q=document.getElementById('searchInput').value.trim();if(!q)return;const bx=document.getElementById('aiAnswerBox');bx.innerHTML='🤔 正在寻找答案...';bx.style.display='block';setTimeout(()=>{bx.innerHTML='💬 '+(ls(q));setTimeout(()=>{bx.style.display='none'},10000)},300)});
+        document.getElementById('searchInput').addEventListener('keypress',e=>{if(e.key==='Enter')document.getElementById('searchBtn').click()});
+        function ls(q){const db={"祭敖包":"祭敖包是蒙古族传统祭祀圣地，由石块堆砌成圆锥形。人们献哈达、奶食、酒，绕行三圈祈求风调雨顺。","婚礼":"阴山地区传统婚礼仪式繁复热烈，包括提亲、迎亲、拜火、敬酒等。新娘穿戴珊瑚头饰与长袍，新郎骑马迎亲。","奶食":"蒙古族以奶制品为日常饮食核心，包括鲜奶、酸奶、奶豆腐、奶酪等。白色被视为吉祥色。","驼文化":"阴山以北的戈壁草原，骆驼是传统交通工具。驼毛擀毡、驼奶酿酒等技艺代代相传。","祭火":"农历腊月二十三或二十四，蒙古族举行祭火仪式，供奉羊胸骨、奶食，祈求家庭平安。","敬酒":"蒙古族敬酒是待客最高礼遇。客人以右手无名指蘸酒弹向天、地、火神，然后饮用。"};for(let[k,v]of Object.entries(db)){if(q.includes(k))return v}return "试试搜索祭敖包、婚礼、奶食、祭火等关键词哦～"}
+    </script>
+</body>
+</html>

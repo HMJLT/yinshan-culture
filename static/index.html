@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="阴山文明走廊 AI 数字文化遗产平台">
+  <title>阴山文明走廊 | AI 数字文明平台</title>
+  <link rel="stylesheet" href="/static/css/app.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="阴山文明走廊首页">
+      <span class="brand-mark"><img src="/static/assets/images/logo.png" alt=""></span>
+      <span>
+        <strong data-i18n="brand">阴山文明走廊</strong>
+        <small>YINSHAN CIVILIZATION CORRIDOR</small>
+      </span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="主导航"></nav>
+    <div class="header-actions">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="切换语言">中 / EN</button>
+      <button class="icon-button" id="menuToggle" type="button" aria-label="展开导航">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg" id="heroBg"></div>
+      <div class="hero-particles"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-holo hero-holo-left" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="hero-holo hero-holo-right" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="hero-inner">
+        <p class="eyebrow" data-i18n="heroEyebrow">AI + 数字文化遗产</p>
+        <h1 id="heroTitle">阴山文明走廊</h1>
+        <p class="hero-copy" id="heroSubtitle">连接农耕与游牧文明的数字时空门户</p>
+        <div class="hero-actions">
+          <a class="primary-action" href="#explore">
+            <i data-lucide="compass"></i>
+            <span data-i18n="startExplore">开始探索</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-rail" id="heroRail" aria-label="文明时间节点"></div>
+    </section>
+
+    <section class="carousel-band" aria-label="阴山风光轮播">
+      <div class="carousel-container" id="carouselContainer">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-item"><img src="/static/assets/images/banner1.jpg" alt="阴山山脉风光" loading="lazy"></div>
+          <div class="carousel-item"><img src="/static/assets/images/banner2.png" alt="阴山岩画鹿群" loading="lazy"></div>
+          <div class="carousel-item"><img src="/static/assets/images/banner3.png" alt="阴山岩画狩猎场景" loading="lazy"></div>
+          <div class="carousel-item"><img src="/static/assets/images/banner4.png" alt="阴山文化遗址" loading="lazy"></div>
+          <div class="carousel-item"><img src="/static/assets/images/banner5.png" alt="阴山文化遗址" loading="lazy"></div>
+          <div class="carousel-item"><img src="/static/assets/images/banner6.png" alt="阴山文明走廊" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="metric-band" aria-label="平台数据">
+      <div class="section-shell">
+        <div class="metrics-grid" id="metricsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section civilization-section" id="explore">
+      <div class="section-shell">
+        <div class="section-heading section-animate">
+          <p class="section-index">01</p>
+          <div>
+            <h2 data-i18n="exploreTitle">文明探索</h2>
+            <p data-i18n="exploreSubtitle">从阴山岩画的远古回响到草原丝路的驼铃声声，探寻游牧与农耕文明的千年交响。</p>
+          </div>
+        </div>
+        <div class="culture-grid" id="civilizationGrid"></div>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="heritage">
+      <div class="section-shell">
+        <div class="section-heading section-animate">
+          <p class="section-index">02</p>
+          <div>
+            <h2 data-i18n="timelineTitle">文明时间轴</h2>
+            <p data-i18n="timelineSubtitle">以文明交汇为故事线，串联岩画、边塞、迁徙、商贸与活态民俗。</p>
+          </div>
+        </div>
+        <div class="timeline-track" id="timelineTrack" aria-label="时间轴"></div>
+        <div class="culture-grid" id="heritageGrid" style="margin-top: 48px;"></div>
+      </div>
+    </section>
+
+    <section class="section map-section" id="map">
+      <div class="section-shell">
+        <div class="section-heading section-animate">
+          <p class="section-index">03</p>
+          <div>
+            <h2 data-i18n="mapTitle">GIS 文化地图</h2>
+            <p data-i18n="mapSubtitle">把“看地图”升级为“看遗址、读故事、进资源库”。</p>
+          </div>
+        </div>
+        <div class="map-layout">
+          <div class="map-canvas" id="mapCanvas" aria-label="阴山文化点位示意图"></div>
+          <aside class="map-detail" id="mapDetail"></aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section knowledge-section" id="knowledge">
+      <div class="section-shell">
+        <div class="section-heading section-animate">
+          <p class="section-index">04</p>
+          <div>
+            <h2 data-i18n="knowledgeTitle">知识图谱</h2>
+            <p data-i18n="knowledgeSubtitle">以关系网络呈现民族、王朝、遗址、人物与文物之间的文明关联。</p>
+          </div>
+        </div>
+        <div class="knowledge-layout">
+          <div class="knowledge-graph" id="knowledgeGraph" aria-label="阴山文明知识图谱"></div>
+          <aside class="knowledge-detail" id="knowledgeDetail">
+            <button class="knowledge-detail-close" id="knowledgeClose" aria-label="关闭详情">✕</button>
+            <div class="knowledge-detail-placeholder">
+              <i data-lucide="mouse-pointer-click"></i>
+              <p data-i18n="knowledgeHint">点击图谱节点查看详情</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section archive-section" id="archive">
+      <div class="section-shell">
+        <div class="section-heading">
+          <p class="section-index">05</p>
+          <div>
+            <h2 data-i18n="archiveTitle">文化资源库</h2>
+            <p data-i18n="archiveSubtitle">以资源卡片承载岩画、文物、民俗、服饰、音乐与历史人物线索。</p>
+          </div>
+        </div>
+        <div class="archive-toolbar">
+          <div class="tab-list" id="categoryTabs" role="tablist"></div>
+          <label class="search-box">
+            <i data-lucide="search"></i>
+            <input id="globalSearch" type="search" placeholder="搜索岩画、赵长城、祭敖包">
+          </label>
+        </div>
+        <div class="resource-grid" id="resourceGrid"></div>
+        <div class="search-results" id="searchResults" hidden></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右下角AI问答悬浮窗 -->
+  <div class="ai-float" id="aiFloat">
+    <button class="ai-float-toggle" id="aiFloatToggle" type="button" aria-label="AI问答">
+      <i data-lucide="bot"></i>
+    </button>
+    <div class="ai-float-panel" id="aiFloatPanel">
+      <div class="ai-float-header">
+        <img class="ai-float-avatar" src="/static/assets/images/keai.png" alt="阴山小使者">
+        <span data-i18n="aiFloatTitle">AI 智能问答</span>
+        <button class="ai-float-close" id="aiFloatClose" type="button" aria-label="关闭">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="ai-float-body" id="aiFloatBody" aria-live="polite">
+        <div class="chat-message guide" data-i18n="aiFloatWelcome">你好！我是阴山文明助手，问我任何关于阴山文化的问题吧。</div>
+      </div>
+      <form class="ai-float-form" id="aiFloatForm">
+        <input id="aiFloatInput" autocomplete="off" placeholder="输入问题...">
+        <button type="submit">
+          <i data-lucide="send"></i>
+        </button>
+      </form>
+      <div class="ai-float-prompts" id="aiFloatPrompts"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <strong>阴山文明走廊</strong>
+        <small>YINSHAN CIVILIZATION CORRIDOR</small>
+      </div>
+      <div class="footer-links">
+        <span data-i18n="footerHelp">帮助中心</span>
+        <span data-i18n="footerContact">联系方式</span>
+      </div>
+      <div class="footer-info">
+        <span data-i18n="footerText">数字人文 · 文化遗产 · 文旅融合</span>
+        <span>© 2024 Yinshan Civilization Corridor</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="/static/js/app.js" defer></script>
+</body>
+</html>
